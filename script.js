@@ -6,7 +6,7 @@ function playGame() {
 
     for (var round = 1; round <=5; round++){
         console.log("Round " + round)
-        let userChoice = prompt("Enter your choice weapon (rock, paper, scissors):" )
+        let userChoice = prompt("Don't forget to go to Inspect source and then open console to see your results. Enter your choice weapon (rock, paper, scissors): " )
 
         if (!userChoice) {
             // if the user cancels or leaves the prompt blank
@@ -18,7 +18,7 @@ function playGame() {
 
         if (!choices.includes(userChoice)) {
             // If the user enters an invalid choice
-            return console.log("Choose from these ONLY (rock,paper,scissors)")
+            return console.log("Choose from these ONLY (rock,paper,scissors). Now again refresh the browser!")
         }
 
 
