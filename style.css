@@ -21,10 +21,3 @@ button{
     background-color: greenyellow;
 }
 
-#result {
-    opacity: 0;
-    transition: opacity 1.2s ease;
-}
-#result.show {
-    opacity: 1;
-  }
