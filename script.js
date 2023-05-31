@@ -3,6 +3,8 @@
     const scissorsBtn = document.getElementById("scissors");
     const resultText = document.getElementById("result");
     const roundText = document.getElementById("round");
+    const userScoreText = document.getElementById("user-score");
+    const computerScoreText = document.getElementById("computer-score");
 
    
     //event listeners for button clicks clacks;
@@ -51,25 +53,26 @@
         resultText.textContent = "You choose " + userChoice + " computer chose " + computerChoice + " . " + result;
 
 
-        //update the round counter
-        round++;
-        roundText.textContent = 'Round ' + round;
+       //update scores
+       userScoreText.textContent = "Your Score: " + userScore;
+       computerScoreText.textContent = "Computer's Score: " + computerScore;
+
 
         //check for the end of the game
-        if (round > 4 ) {
+        if (userScore === 5 || computerScore === 5) {
             //determine the final winner
             let finalResult;
-            if (userScore > computerScore) {
-                finalResult = " You defeated the computer and won the game!"
-            } else if (userScore < computerScore) {
-                finalResult = " Computer wins the game!"
-            } else {
-                finalResult = " It's a TIE , what a surprise!"
+            if(userScore > computerScore) {
+                finalResult = "You win the game, good job!";
+            }else if (userScore < computerScore) {
+                finalResult = "Computer wins the game!";
+            } else{
+                finalResult = "It's a TIE!!!";
             }
+        
 
-            
             //Display the final result 
-            resultText.textContent = "Game over homie! " + finalResult + " Your score: " + userScore + " - " + " Computer score: " + computerScore;
+            resultText.textContent = "GAME OVER! " + finalResult;
 
              // Disable button clicks
             rockBtn.disabled = true;
