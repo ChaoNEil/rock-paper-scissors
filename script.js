@@ -73,13 +73,14 @@
 
             //Display the final result 
             resultText.textContent = "GAME OVER! " + finalResult;
+            resultText.classList.add("show");
 
              // Disable button clicks
             rockBtn.disabled = true;
             paperBtn.disabled = true;
             scissorsBtn.disabled = true;
 
-            alert("Refresh the browser to play again")
+            
         }
     }
 
