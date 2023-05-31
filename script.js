@@ -75,6 +75,8 @@
             rockBtn.disabled = true;
             paperBtn.disabled = true;
             scissorsBtn.disabled = true;
+
+            alert("Refresh the browser to play again")
         }
     }
 

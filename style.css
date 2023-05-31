@@ -6,3 +6,18 @@
 #game{
     text-align: center;
 }
+
+button{
+    transition: background-color 0.3s ease;
+}
+
+#rock:hover {
+    background-color: red;
+}
+#scissors:hover {
+    background-color: blue;
+}
+#paper:hover {
+    background-color: greenyellow;
+}
+
