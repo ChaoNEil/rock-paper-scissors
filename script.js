@@ -50,7 +50,7 @@
         }
 
         //display the result
-        resultText.textContent = "You choose " + userChoice + " computer chose " + computerChoice + " . " + result;
+        resultText.textContent = "You choose " + userChoice + " . " + " Computer chose " + computerChoice + " . " + result;
 
 
        //update scores
